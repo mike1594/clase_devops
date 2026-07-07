@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sitio de práctica desplegado con GitHub Pages y GitHub Actions."
+    />
+    <title>Mi Sitio con GitHub Pages</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0d1117;
+        color: #e6edf3;
+      }
+
+      main {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      .card {
+        max-width: 720px;
+        padding: 40px;
+        border: 1px solid #30363d;
+        border-radius: 16px;
+        background: #161b22;
+        text-align: center;
+      }
+
+      h1 {
+        margin-top: 0;
+        color: #58a6ff;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+      }
+
+      p {
+        line-height: 1.6;
+        color: #c9d1d9;
+      }
+
+      .status {
+        display: inline-block;
+        margin-top: 16px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: #238636;
+        color: white;
+        font-weight: bold;
+      }
+
+      footer {
+        margin-top: 32px;
+        font-size: 0.9rem;
+        color: #8b949e;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section class="card">
+        <h1>🚀 GitHub Pages activo</h1>
+
+        <p>
+          Este sitio se despliega desde la carpeta <strong>docs</strong> usando
+          GitHub Pages.
+        </p>
+
+        <p>
+          Cada cambio subido al repositorio puede validarse con GitHub Actions.
+        </p>
+
+        <span class="status">Entorno: testing</span>
+
+        <footer>Proyecto de práctica DevOps - CI/CD con GitHub Actions</footer>
+      </section>
+    </main>
+  </body>
+</html>
