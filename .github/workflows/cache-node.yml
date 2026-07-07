@@ -1,4 +1,4 @@
-name: CI con Caché (Node.js)
+name: CI con Caché (pnpm + setup-node)
 
 on:
     push:
@@ -10,14 +10,19 @@ jobs:
         steps:
             - uses: actions/checkout@v5
 
+            - name: 🔑 Setup pnpm
+              uses: pnpm/action-setup@v6
+              with:
+                  version: "10"
+
             - name: ⚙️ Setup Node
               uses: actions/setup-node@v5
               with:
                   node-version: "20"
-                  cache: "npm" # ← setup-node tiene caché integrado 🎉
+                  cache: "pnpm" # ← setup-node tiene caché integrado 🎉
 
             - name: 📦 Instalar dependencias
-              run: npm ci # ci es más rápido que install en CI
+              run: pnpm install --frozen-lockfile # ci es más rápido que install en CI
 
             - name: 🧪 Tests
-              run: npm test
+              run: pnpm test
