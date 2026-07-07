@@ -1,11 +1,15 @@
 # clase_devops
 
+**Diplomado DevOps**
+
+Curso: **DevOps & Project Management Fundamentals**
+Profesor: **Omar Muñoz**
+Participante: **Joe Meza Cardama**
+
 Repositorio para ejemplo y talleres de clase
 Mi primer pipeline creado desde github actions
 
-# Agrega esto al inicio del README.md:
-
-![CI Pipeline](https://github.com/mike1594/mi-primer-workflow/actions/workflows/ci.yml/badge.svg)
+![CI Pipeline](https://github.com/mike1594/CLASE_DEVOPS/actions/workflows/ci.yml/badge.svg)
 
 # El badge se verá así en GitHub:
 
