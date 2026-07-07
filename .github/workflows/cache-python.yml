@@ -19,7 +19,7 @@ jobs:
             # Si el archivo no cambia → caché reutilizada (FAST ⚡)
             # Si el archivo cambia  → nueva caché creada (SLOW 🐢 primera vez)
             - name: 📦 Restaurar caché pip
-              uses: actions/cache@v4
+              uses: actions/cache@v6
               with:
                   path: ~/.cache/pip
                   key: pip-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
