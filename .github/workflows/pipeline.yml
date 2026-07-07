@@ -15,7 +15,7 @@ jobs:
               run: |
                   echo "✅ Revisando formato del código..."
                   echo "Sin errores de lint"
-                  exit 1
+              # exit 1 comentado para probar flujo total
 
     # ── 2do job: pruebas (espera a que lint pase) ────────────────
     test:
