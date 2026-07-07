@@ -1,5 +1,5 @@
 # Nombre del workflow — aparece en la pestaña Actions de GitHub
-name: CI Pipeline
+name: CI Pipeline - Test
 
 # ── TRIGGERS: cuándo se ejecuta este workflow ──────────────────
 on:
