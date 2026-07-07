@@ -15,6 +15,8 @@ jobs:
   build: # nombre del job
     name: Ejecutar Pruebas
     runs-on: ubuntu-22.04 # runner: Ubuntu más reciente
+    env:
+      APP_ENV: testing
 
     # ── STEPS: pasos secuenciales del job ───────────────────────
     steps:
