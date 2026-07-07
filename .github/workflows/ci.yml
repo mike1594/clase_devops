@@ -51,7 +51,7 @@ jobs:
 
     steps:
       - name: 📥 Checkout del código
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: 🔎 Verificar líneas largas
         run: awk 'length > 80 { print; found=1 } END { exit found }' test.sh
