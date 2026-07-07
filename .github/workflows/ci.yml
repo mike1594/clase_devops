@@ -3,6 +3,7 @@ name: CI Pipeline - Test
 
 # ── TRIGGERS: cuándo se ejecuta este workflow ──────────────────
 on:
+  workflow_dispatch:
   push:
     branches:
       - main # se activa en cada push a la rama main
